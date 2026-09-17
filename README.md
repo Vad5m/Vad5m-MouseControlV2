@@ -1,5 +1,15 @@
 # Vad5m-MouseControlV2
 
+> **Only for Linux**
+
+```bash
+# Installing dependencies
+pip install -r requirements.txt
+
+# Launching the application
+python3 main.py
+
+
 <pre>
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠀⠤⠴⠶⡇
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣾⣿⡟
