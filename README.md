@@ -12,7 +12,7 @@ python3 main.py
 > **Windows**
 
 ```
-# Vad5m-MouseControlV2
+pip install flask pyautogui
 
 # windows Launching the application
 sudo python3 win-mouse.py
