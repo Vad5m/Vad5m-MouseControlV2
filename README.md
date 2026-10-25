@@ -38,7 +38,7 @@ python3 main.py
 pip install flask pyautogui
 
 # windows Launching the application
-sudo python3 win-mouse.py
+sudo python3 main.py
 ```
 
 </br>
