@@ -35,7 +35,7 @@ python3 main.py
 > **Windows**
 
 ```
-pip install flask pyautogui
+pip install flask pyautogui PyQt5
 
 # windows Launching the application
 sudo python3 main.py
