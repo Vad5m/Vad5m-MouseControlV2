@@ -138,16 +138,18 @@ class MouseWindow(QMainWindow):
         self.setWindowIcon(QIcon(ICON_PATH))
         self.setFixedSize(500, 200)
 
+        self.setStyleSheet("background-color: #2b2b2b;")
+
         central = QWidget()
         layout = QVBoxLayout(central)
         layout.setContentsMargins(0, 0, 0, 0)
 
         ip_label = QLabel(local_ip)
         ip_label.setStyleSheet(
-            "font-size: 64px; font-weight: bold; color: white;"
+            "font-size: 54px; font-weight: bold; color: #ffffff; background-color: transparent;"
         )
         ip_label.setAlignment(Qt.AlignCenter)
-        ip_label.setTextInteractionFlags(Qt.TextSelectableByMouse)
+        
         layout.addWidget(ip_label)
 
         self.setCentralWidget(central)
@@ -204,6 +206,9 @@ class MouseWindow(QMainWindow):
 
 
 def main():
+    QApplication.setAttribute(Qt.AA_EnableHighDpiScaling, True)
+    QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps, True)
+
     system = platform.system()
     if system not in ("Linux", "Windows"):
         print(f"Unsupported system: {system}")
